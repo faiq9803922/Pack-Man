@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZELVS Cyber Pac-Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="overlay">
+            <h1 class="glow-title" id="main-title">UZELVS</h1>
+            <p class="subtitle" id="sub-title">CYBER PACK-MAN</p>
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="ui-layer">
+            <div class="ui-box">SCORE: <span id="score-val">0</span></div>
+            <div class="ui-box">LEVEL: <span id="level-val">1/20</span></div>
+            <div class="ui-box">LIVES: <span id="lives-val">3</span></div>
+        </div>
+
+        <canvas id="gameCanvas" width="440" height="440"></canvas>
+
+        <div id="controls">
+            <div class="btn" id="btn-up">↑</div>
+            <div class="btn" id="btn-left">←</div>
+            <div class="btn" id="btn-right">→</div>
+            <div class="btn" id="btn-down">↓</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
